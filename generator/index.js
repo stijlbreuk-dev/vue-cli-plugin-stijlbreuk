@@ -5,7 +5,11 @@ module.exports = (api, options, rootOptions) => {
         devDependencies: {
             'node-sass' : '4.x',
             'sass-loader': '7.x'
+        },
+        scripts: {
+            'build:staging': 'vue-cli-service build --mode staging'
         }
     });
     api.render('./template');
+    api.exitLog('🙌 Stijlbreuk scaffolding completed 🙌');
 }
