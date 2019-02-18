@@ -1,0 +1,11 @@
+{
+    "name": "vue-cli-plugin-stijlbreuk",
+    "version": "0.0.2",
+    "description": "a vue plugin that does extra scaffolding the way we like it at Stijlbreuk",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Jeroen Peerbolte",
+    "license": "ISC"
+}
