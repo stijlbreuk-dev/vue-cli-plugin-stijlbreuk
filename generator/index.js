@@ -5,7 +5,18 @@ module.exports = (api, options, rootOptions) => {
     devDependencies: {
       'node-sass': '4.x',
       'sass-loader': '7.x',
-      'reset-css': '4.x'
+      'reset-css': '4.x',
+      /**
+       * Linting
+       */
+      '@vue/cli-plugin-babel': '^3.4.0',
+      '@vue/cli-plugin-eslint': '^3.4.0',
+      '@vue/eslint-config-airbnb': '^4.0.0',
+      'babel-eslint': '^10.0.1',
+      'eslint': '^5.8.0',
+      'eslint-plugin-vue': '^5.0.0',
+      'markdownlint-cli': '^0.14.1',
+      'npm-run-all': '^4.1.5',
     },
     scripts: {
       'build:staging': 'vue-cli-service build --mode staging',
