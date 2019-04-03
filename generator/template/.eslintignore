@@ -2,3 +2,4 @@
 # https://github.com/eslint/eslint/issues/4828
 !/.*.js
 /dist/
+/public/
