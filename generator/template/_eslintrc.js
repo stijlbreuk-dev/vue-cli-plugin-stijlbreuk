@@ -41,6 +41,10 @@ module.exports = {
     'import/extensions': [
       'never'
     ],
+    indent: [
+      'error',
+      2
+    ],
     'no-console': 'off',
     // Only allow 'debugger;' statements in development
     'no-debugger': process.env.NODE_ENV !== 'development' ? 'error' : 'off',
