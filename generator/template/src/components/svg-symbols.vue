@@ -1,9 +1,10 @@
-         
+
 <template>
+  <!-- eslint-disable max-len -->
   <div>
     <svg style="position: absolute; top: -9999px;">
-      <!-- 		
-                UI ICONS 		
+      <!--
+                UI ICONS
                 // UI icons are always fills, no lines
       -->
       <symbol id="icon_ui_arrow-download" viewBox="0 0 500 500">
@@ -150,8 +151,8 @@
         ></path>
       </symbol>
 
-      <!-- 		
-                CONTENT ICONS 		
+      <!--
+                CONTENT ICONS
       -->
       <symbol id="icon_3d-preview" viewBox="0 0 500 500">
         <path
@@ -272,6 +273,7 @@
       </symbol>
     </svg>
   </div>
+  <!-- eslint-enable max-len -->
 </template>
 
 <script>
