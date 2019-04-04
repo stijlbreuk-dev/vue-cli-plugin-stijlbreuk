@@ -34,7 +34,21 @@ module.exports = (api, options, rootOptions) => {
       'lint:dry-run': 'run-s lint:dry-run:*'
     }
   });
-  api.render('./template');
+  api.render('./template', {
+    sbOptions: {
+      /**
+       * When invoking a plug-in, every file in the `./template` folder is treated as 
+       * a `EJS` (Embedded Javascript) file. This allows us to inject dynamic data
+       * into a file. Properties added to the `sbOptions` object can be injected into
+       * any file.
+       * 
+       * example:
+       *  create a `version` property by adding `version: '1.0.0'` below
+       *  refer to the property in `README.md` like so:
+       *    <%= sbOptions.version %>
+       */
+    }
+  });
   api.injectImports(api.entryFile, `import '@/components/global/_global-imports.js'`)
   api.exitLog('🙌 Stijlbreuk scaffolding completed 🙌');
 }
