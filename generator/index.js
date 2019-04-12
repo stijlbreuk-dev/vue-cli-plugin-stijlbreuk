@@ -11,6 +11,7 @@ module.exports = (api, options, rootOptions) => {
       '@vue/cli-plugin-eslint': '^3.4.0',
       '@vue/eslint-config-airbnb': '^4.0.0',
       'babel-eslint': '^10.0.1',
+      'babel-preset-airbnb': '^3.2.1',
       'eslint': '^5.8.0',
       'eslint-plugin-vue': '^5.0.0',
       'markdownlint-cli': '^0.14.1',
@@ -19,6 +20,7 @@ module.exports = (api, options, rootOptions) => {
       'stylelint-config-recess-order': '^2.0.1',
       'stylelint-config-standard': '^18.2.0',
       'stylelint-scss': '^3.5.4',
+      
     },
     scripts: {
       'build:staging': 'vue-cli-service build --mode staging',
