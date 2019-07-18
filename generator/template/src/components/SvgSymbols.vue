@@ -278,7 +278,7 @@
 
 <script>
   export default {
-    name: 'svg-symbols',
+    name: 'SvgSymbols',
   };
 </script>
 

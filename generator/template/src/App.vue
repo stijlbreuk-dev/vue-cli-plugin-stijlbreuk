@@ -2,14 +2,14 @@
   <div id="app" class="orange">
     <symbols></symbols>
     <span>
-      <svg-icon :iconId="'icon_ui_info'"></svg-icon>
+      <SvgIcon :iconId="'icon_ui_info'"></SvgIcon>
       app version: {{ version }}
     </span>
   </div>
 </template>
 
 <script>
-  import Symbols from '@/components/svg-symbols';
+  import Symbols from '@/components/SvgSymbols';
   export default {
     name: 'app',
     data() {
