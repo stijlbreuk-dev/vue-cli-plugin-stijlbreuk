@@ -5,7 +5,7 @@ module.exports = {
       '@vue/app',
       {
         polyfills: [
-          'es6.promise'
+          'es.promise'
         ]
       },
     ],
