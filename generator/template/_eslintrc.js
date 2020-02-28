@@ -138,7 +138,8 @@ module.exports = {
     ],
     'vue/script-indent': [
       'error'
-    ]
+    ],
+    'max-len': 'off'
   },
   overrides: [
     {
