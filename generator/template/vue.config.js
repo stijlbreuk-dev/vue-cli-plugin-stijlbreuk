@@ -7,5 +7,6 @@ module.exports = {
         prependData: '@import "@/styles/_variables.scss";'
       }
     }
-  }
+  },
+  lintOnSave: process.env.NODE_ENV !== 'production'
 };
