@@ -8,5 +8,11 @@ module.exports = {
       }
     }
   },
-  lintOnSave: process.env.NODE_ENV !== 'production'
+  lintOnSave: process.env.NODE_ENV !== 'production',
+  publicPath:
+    process.env.NODE_ENV === 'production'
+      ? process.env.K8S_SECRET_VUE_APP_BASE_URL
+        || process.env.VUE_APP_BASE_URL
+        || '/'
+      : '/'
 };
