@@ -7,6 +7,7 @@ module.exports = (api, options, rootOptions) => {
       /**
        * Linting
        */
+      "@release-it/keep-a-changelog": "^2.2.2",
       '@vue/cli-plugin-babel': '^3.4.0',
       '@vue/cli-plugin-eslint': '^3.4.0',
       '@vue/eslint-config-airbnb': '^4.0.0',
@@ -16,10 +17,12 @@ module.exports = (api, options, rootOptions) => {
       'eslint-plugin-vue': '^5.0.0',
       'markdownlint-cli': '^0.14.1',
       'npm-run-all': '^4.1.5',
+      "release-it": "^14.2.2",
       'stylelint': '^9.10.1',
       'stylelint-config-recess-order': '^2.0.1',
       'stylelint-config-standard': '^18.2.0',
       'stylelint-scss': '^3.5.4',
+
       
     },
     scripts: {
@@ -33,7 +36,8 @@ module.exports = (api, options, rootOptions) => {
       'lint:dry-run:stylelint': 'npm run lint:stylelint -- "src/**/*.{vue,scss}"',
       'lint:dry-run:markdownlint': 'npm run lint:markdownlint -- "docs/*.md" "*.md"',
       'lint': 'run-s lint:all:*',
-      'lint:dry-run': 'run-s lint:dry-run:*'
+      'lint:dry-run': 'run-s lint:dry-run:*',
+      'release': 'release-it'
     }
   });
   api.render('./template', {
