@@ -1,11 +1,32 @@
 {
-    "name": "vue-cli-plugin-stijlbreuk",
-    "version": "0.0.2",
-    "description": "a vue plugin that does extra scaffolding the way we like it at Stijlbreuk",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "Jeroen Peerbolte",
-    "license": "ISC"
+  "name": "vue-cli-plugin-stijlbreuk",
+  "version": "0.2.0",
+  "description": "vue-cli plugin that does extra scaffolding the way we like it at Stijlbreuk",
+  "keywords": [
+    "vue",
+    "vue-cli",
+    "stijlbreuk"
+  ],
+  "homepage": "https://github.com/Stijlbreuk/vue-cli-plugin-stijlbreuk#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stijlbreuk/vue-cli-plugin-stijlbreuk.git"
+  },
+  "license": "ISC",
+  "author": "Stijlbreuk <info@stijlbreuk.nl>",
+  "contributors": [
+    "Nino Vrijman <nino@stijlbreuk.nl>",
+    "Jeroen Peerbolte <jeroen@stijlbreuk.nl>",
+    "Max Altena <max@stijlbreuk.nl>"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "prettier": "prettier * --check",
+    "prettier:fix": "prettier * --write",
+    "sort-package-json": "sort-package-json"
+  },
+  "devDependencies": {
+    "prettier": "^2.3.2",
+    "sort-package-json": "^1.50.0"
+  }
 }
