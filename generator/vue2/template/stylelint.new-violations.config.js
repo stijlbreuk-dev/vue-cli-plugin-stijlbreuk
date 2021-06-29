@@ -5,12 +5,12 @@
  * simpler configuration to fix new violations.
  */
 module.exports = {
-  rules: {
-    indentation: [
-      2,
-      {
-        baseIndentLevel: 1
-      }
-    ]
-  }
+	rules: {
+		indentation: [
+			2,
+			{
+				baseIndentLevel: 1,
+			},
+		],
+	},
 };
